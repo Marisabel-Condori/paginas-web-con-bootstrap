@@ -78,7 +78,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="images/hotel.jpg" alt="Responsive img">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement = "top" title="las primeras reservas cuentan con clases de tango gratis">Hotel Barcelona</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
                 </div>
@@ -226,5 +226,10 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function(){
+            $("[data-togle = 'tooltip']").tooltip();
+        });
+    </script>
     </body>
 </html>
