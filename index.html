@@ -36,24 +36,34 @@
             <ol class="breadcrumb" aria-current="page">
                 <li class="breadcrumb-item active " aria-current="page">Home</li>
             </ol>
-            
         </nav>
         <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">Como funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">Donde puedo pagar?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">Como pago?</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
                 <p>
                     <h3>Como funciona?</h3>
                     <p>busca hoteles de acuerdo a tu preferencia.</p>
                 </p>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
                 <p>
                     <h3>Donde puedo reservar?</h3>
                     <p>Elige a la ciudad que te interese y luego realiza la reserva con tus datos</p>
                 </p>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <p>
                     <h3>Como pago?</h3>
                     <p>utiliza tu tarjeta favorita</p>
