@@ -142,7 +142,7 @@
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
                 </div>
-                <div>   <button class="btn btn-primary btn-reserva">Reservar</button>   </div>
+                <div>   <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones">Reservar</button>   </div>
             </div>
 
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -229,6 +229,7 @@
     <script>
         $(function(){
             $("[data-togle = 'tooltip']").tooltip();
+            $("[data-togle = 'popover']").popover();
         });
     </script>
     </body>
