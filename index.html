@@ -183,7 +183,7 @@
                     <h5 class="card-title">Hotel Lima</h4>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
-                    <button type="button" class="btn btn-outline-seccess" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-seccess" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                 </div>
                 <div>   <button class="btn btn-primary btn-reserva">Reservar</button>   </div>
             </div>
@@ -255,6 +255,22 @@
             $('.carousel').carousel({
                 interval:1500
             })
+            $('#contacto').on('show.bs.modal', function(e){
+                console.log('el modal se esta mostrando');
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').removeClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+            });
+            $('#contacto').on('shown.bs.modal', function(e){
+                console.log('el modal se esta mostro');
+            });
+            $('#contacto').on('hide.bs.modal', function(e){
+                console.log('el modal se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal', function(e){
+                console.log('el modal se oculto');
+                $('#contactoBtn').prop('disabled', false);
+            });
         });
     </script>
     </body>
